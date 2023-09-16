@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+}
+@keyframes introani {
+    from{transform: translate(0,-600px);}
+}
+@keyframes introtext {
+    from{transform: scale(0.2);color: azure;}
+    to{transform: scale(1);color: black;}
+}
+@keyframes reddisplay {
+    to{background-color: rgb(194, 53, 53);}
+}
+.maintext{
+    text-align: center;
+    position: fixed;font-size: 45px;
+    font-family:'Black Ops One','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    animation-name: introtext;
+    animation-duration: 1.4s;
+}
+.back{
+    background: rgb(107,170,237);
+background: linear-gradient(90deg, rgba(107,170,237,1) 0%, rgba(139,185,232,1) 50%, rgba(24,112,205,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (width:600px) {
+    .container{
+        background-color: rgb(237, 12, 12);
+    }
+}
+
+.container{
+    animation-name: introani;
+    animation-duration: 1.5s;
+    background-color: #FBEAEB;
+    border-radius: 20px;
+    height: 80vh;
+    width: 50vw;
+    min-width: 350px;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rcp{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30%;
+    width: 80%;
+
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    height: 90%;
+    width: 90%;
+    background-color: #2F3C7E;
+}
+.iconbox{
+    height: 80%;
+    width: 80%;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgb(107, 148, 238);
+    border: 5px solid transparent;
+}
+.iconbox:hover{
+    border: 5px solid white;
+    transition-duration: 0.4s;
+}
+.scoredisplay{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 20%;
+    width: 100%;
+}
+.scoredisplay table{
+    border:solid;
+    font-size: 20px;
+    color: whitesmoke;
+}
+th{
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(104, 117, 183);
+  }
+  td{
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(34, 111, 155);
+  }
+  .outputtext{
+    margin: 50px;
+    font-size: 25px;
+    font-family: 'Black Ops One','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .resetswitch{
+    background-color: rgb(107, 148, 238);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    border-radius: 4px;
+    font-size: 25px;
+    height: 4rem;
+    width: 9rem;
+  }
+  .resetswitch:hover{
+    transform: scale(1.1);
+    border: 4px rgb(110, 83, 83) solid;
+    transition-duration: 0.5s;
+  }

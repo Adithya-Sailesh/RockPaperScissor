@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="assests/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back">
+        <h1 class="maintext">ROCK PAPER SCISSORS</h1>
+        <div class="container">
+            <div class="rcp">
+                <div class="rockbox box">
+                    <button class="iconbox" value="rock">✊</button>
+                </div>
+                <div class="paperbox box">
+                    <button class="iconbox" value="paper">🤚</button>
+                </div>
+                <div class="scissorbox box">
+                    <button class="iconbox" value="scissor">✌️</button>
+                </div>
+            </div>
+            <div class="scoredisplay">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>You</th>
+                            <th>Computer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="myscore">0</td>
+                            <td id="pcscore">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="outputtext" id="outPut">
+                 Start The Game
+            </div>
+            <div>
+                <button class="resetswitch">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
